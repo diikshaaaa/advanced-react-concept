@@ -16,7 +16,7 @@ const ErrorExample = () => {
     </React.Fragment>
   );
 };
-// here we are changing the value of title, that is why oin console it is showing the changed value 
+// here we are changing the value of title, that is why in console it is showing the changed value 
 // but still title is not changing because we are not re-rendering the component 
 
 export default ErrorExample;
