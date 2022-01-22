@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 const url = 'https://api.github.com/users/QuincyLarson';
+
 const MultipleReturns = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
@@ -25,6 +26,7 @@ const MultipleReturns = () => {
   }, []);
 
   if (isLoading) {
+  // if isLoading is true then show "Loading..." 
     return (
       <div>
         <h1>Loading...</h1>
@@ -32,6 +34,7 @@ const MultipleReturns = () => {
     );
   }
   if (isError) {
+  // if isError is true then show "Error..."
     return (
       <div>
         <h1>Error....</h1>

@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 const url = 'https://api.github.com/users';
 
-// second argument
-
 const UseEffectFetchData = () => {
   const [users, setUsers] = useState([]);
 
@@ -11,10 +9,21 @@ const UseEffectFetchData = () => {
     const response = await fetch(url);
     const users = await response.json();
     setUsers(users);
-    // console.log(users);
+  //async and await make promises easier to write
+  //async makes a function return a Promise
+  //await makes a function wait for a Promise
+  // promise is an object that may produce a single value some time in the future
   };
 
-  useEffect(() => {
+  // you cannot use async, await inside useEffect like:
+  // useEffect(async () => {
+  //          .....
+  // })
+  // because async, await returns promises and useEffect cannot return a promise 
+  // so you can either create async in separate function like we did here or inside the callback function of useEffect
+
+
+    useEffect(() => {
     getUsers();
   }, []);
   return (
