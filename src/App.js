@@ -1,5 +1,5 @@
-import React from 'react'
-import Nova from './tutorial/2-useEffect/5-useEffect-cleanup-w3'
+import React from 'react';
+import Nova from './tutorial/7-prop-drilling/1-prop-drilling';
 
 function App() {
   return (
