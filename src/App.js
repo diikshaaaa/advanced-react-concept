@@ -1,5 +1,5 @@
 import React from 'react';
-import Nova from './tutorial/7-prop-drilling/1-prop-drilling';
+import Nova from './tutorial/8-useContext/3-context-api'
 
 function App() {
   return (
