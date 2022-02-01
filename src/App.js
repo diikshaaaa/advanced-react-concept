@@ -1,5 +1,5 @@
 import React from 'react';
-import Nova from './tutorial/8-useContext/3-context-api'
+import Nova from './tutorial/12-memo-useMemo-useCallback';
 
 function App() {
   return (

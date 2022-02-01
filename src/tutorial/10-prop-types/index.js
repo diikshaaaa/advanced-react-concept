@@ -1,8 +1,8 @@
-import React from 'react'
-import Product from './Product'
-import { useFetch } from '../../9-custom-hooks/useFetch'
+import React from 'react';
+import Product from './Product';
+import useFetch  from './useFetch';
 
-const url = 'https://course-api.com/react-prop-types-example'
+const url = 'https://course-api.com/react-prop-types-example';
 
 const Index = () => {
   const { products } = useFetch(url)
