@@ -1,5 +1,5 @@
 import React from 'react';
-import Nova from './tutorial/12-memo-useMemo-useCallback';
+import Nova from './tutorial/13-useMemo/index';
 
 function App() {
   return (
